@@ -1,0 +1,7 @@
+# Local Laya AI Backend Service Requirements
+laya>=0.4.1
+torch>=2.14.0
+transformers>=5.0.0
+fastapi>=0.115.0
+uvicorn>=0.30.0
+pydantic>=2.0.0

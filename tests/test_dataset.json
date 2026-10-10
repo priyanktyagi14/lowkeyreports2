@@ -1,0 +1,79 @@
+[
+  {
+    "scenario": "phishing",
+    "description": "Executive assistant received spearphishing email with spoofed CEO domain prompting immediate login on fake Microsoft 365 credential harvesting page.",
+    "expectedDomain": "internal",
+    "expectedSeverity": "Severe",
+    "expectedAction": "Immediate Remediation"
+  },
+  {
+    "scenario": "phishing",
+    "description": "Marketing team member received unsolicited LinkedIn message containing malicious resume attachment with macro payload.",
+    "expectedDomain": "internal",
+    "expectedSeverity": "Medium",
+    "expectedAction": "Remediate in Sprint"
+  },
+  {
+    "scenario": "ransomware",
+    "description": "EDR detected LockBit 3.0 ransomware staging executable attempting to terminate backup agents and delete VSS shadow copies on production hosts.",
+    "expectedDomain": "machines",
+    "expectedSeverity": "Severe",
+    "expectedAction": "Immediate Remediation"
+  },
+  {
+    "scenario": "ransomware",
+    "description": "Lateral movement attempt using PsExec across internal Active Directory domain controllers following credential compromise.",
+    "expectedDomain": "internal",
+    "expectedSeverity": "Severe",
+    "expectedAction": "Immediate Remediation"
+  },
+  {
+    "scenario": "exposed_services",
+    "description": "Public Amazon S3 storage bucket containing unencrypted customer transaction history databases readable anonymously from 0.0.0.0/0.",
+    "expectedDomain": "external",
+    "expectedSeverity": "Severe",
+    "expectedAction": "Immediate Remediation"
+  },
+  {
+    "scenario": "exposed_services",
+    "description": "Public customer API gateway endpoint exposes verbose stack trace and internal database server IP addresses during HTTP 500 error responses.",
+    "expectedDomain": "external",
+    "expectedSeverity": "Medium",
+    "expectedAction": "Remediate in Sprint"
+  },
+  {
+    "scenario": "unpatched_vulnerabilities",
+    "description": "Critical unauthenticated remote code execution vulnerability (CVE-2024-7646) identified in active production Kubernetes ingress controller.",
+    "expectedDomain": "machines",
+    "expectedSeverity": "Severe",
+    "expectedAction": "Immediate Remediation"
+  },
+  {
+    "scenario": "unpatched_vulnerabilities",
+    "description": "Production database bastion host runs OpenSSH 7.4 with deprecated Diffie-Hellman key exchange algorithm on internal management network.",
+    "expectedDomain": "machines",
+    "expectedSeverity": "Medium",
+    "expectedAction": "Remediate in Sprint"
+  },
+  {
+    "scenario": "insecure_configurations",
+    "description": "Decommissioned internal mediawiki instance on isolated lab subnet 10.99.1.5 retains default admin password; contains no customer data and is inaccessible externally.",
+    "expectedDomain": "internal",
+    "expectedSeverity": "Ignorable",
+    "expectedAction": "Deprioritize / Accept Risk"
+  },
+  {
+    "scenario": "insecure_configurations",
+    "description": "Developer local sandbox Docker daemon listening on 127.0.0.1 uses self-signed testing TLS certificates for offline integration tests.",
+    "expectedDomain": "internal",
+    "expectedSeverity": "Ignorable",
+    "expectedAction": "Deprioritize / Accept Risk"
+  },
+  {
+    "scenario": "insecure_configurations",
+    "description": "Internal test staging database gateway responds to ICMP echo diagnostic requests inside private non-routed subnet.",
+    "expectedDomain": "machines",
+    "expectedSeverity": "Ignorable",
+    "expectedAction": "Deprioritize / Accept Risk"
+  }
+]

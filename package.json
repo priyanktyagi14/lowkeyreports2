@@ -1,0 +1,30 @@
+{
+  "name": "lowkeyreports",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "start:laya": "powershell -ExecutionPolicy Bypass -File ./backend/run_service.ps1",
+    "test:laya": ".\\.venv_laya\\Scripts\\python.exe tests/test_api_endpoints.py",
+    "eval:laya": ".\\.venv_laya\\Scripts\\python.exe tests/evaluate_laya.py"
+  },
+  "dependencies": {
+    "@esbuild/win32-x64": "^0.28.2",
+    "jspdf": "^2.5.2",
+    "jspdf-autotable": "^3.8.4",
+    "jszip": "^3.10.1",
+    "lucide-react": "^0.475.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.1.0"
+  }
+}
